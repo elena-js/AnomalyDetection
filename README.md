@@ -1,26 +1,13 @@
 # Anomaly Detection Using Machine Learning on Smartwatch Data
 
-## Overview
-
-This project is designed to accomplish X, Y, and Z. It provides functionality for [briefly describe the main features or goals of the project].
+This project is designed to detect anomalies on smartwatch health data and deploy a web application to show the results.
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
 - [Project Structure](#project-structure)
 - [File Descriptions](#file-descriptions)
-
-## Installation
-
-To install the necessary dependencies, run the following command:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-To run the project, execute the main script as follows:
+- [Installation](#installation)
+- [Usage](#usage)
 
 ## Project Structure
 
@@ -28,7 +15,9 @@ To run the project, execute the main script as follows:
 ├── README.md
 ├── appweb/
 │   ├── myapp/
-│       └── ...
+│       └── public/
+│       └── server/
+│       └── src/
 ├── dataset-fitness/
 │   ├── FitabaseData3.12.16-4.11.16-new/
 │       └── ...
@@ -46,9 +35,24 @@ To run the project, execute the main script as follows:
 ## File Descriptions
 
 - **`README.md`**: This file provides an overview of the project, installation instructions, and usage guidelines.
-- **`src/`**: Contains the source code of the project.
-  - **`main.py`**: The main file where the application logic is implemented.
-  - **`utils.py`**: Utility functions used throughout the project.
-- **`tests/`**: Includes automated tests for the code.
-  - **`test_main.py`**: Unit tests for the functions and features in `main.py`.
-- **`requirements.txt`**: A list of dependencies required for the project to run.
+- **`appweb/`**: Folder that contains the project of the web app.
+  - **`myapp/`**: Folder of the project of the web app. It contains all the files of the app web.
+    - **`public/`**: Contains static files such as `index.html`, `manifest.json`, `robots.txt`, images, and icons used in the application.
+    - **`server/`**: Contains server-side logic, including the entry point (`index.js`) and configuration files for the Node.js application.
+    - **`src/`**:
+- **`dataset-fitness/`**: Folder with the source datasets for the anomaly detection. It contains 2 folders with all the files collected by Fitbit.
+- **`datasets/`**: Folder with the generated datasets after the preprocess (files with .pkl extension).
+- **`figures/`**: Folder with the generated figures from the preprocess and anomaly detection phases.
+- **`anom_det.py`**: The python file with the anomaly detection system.
+- **`preprocess.py`**: The python file with the preprocessing phase.
+
+## Installation
+
+To install the necessary dependencies, run the following command:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+To run the project, execute the main script as follows:
