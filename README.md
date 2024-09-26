@@ -35,24 +35,71 @@ This project is designed to detect anomalies on smartwatch health data and deplo
 ## File Descriptions
 
 - **`README.md`**: This file provides an overview of the project, installation instructions, and usage guidelines.
-- **`appweb/`**: Folder that contains the project of the web app.
-  - **`myapp/`**: Folder of the project of the web app. It contains all the files of the app web.
-    - **`public/`**: Contains static files such as `index.html`, `manifest.json`, `robots.txt`, images, and icons used in the application.
-    - **`server/`**: Contains server-side logic, including the entry point (`index.js`) and configuration files for the Node.js application.
-    - **`src/`**:
-- **`dataset-fitness/`**: Folder with the source datasets for the anomaly detection. It contains 2 folders with all the files collected by Fitbit.
-- **`datasets/`**: Folder with the generated datasets after the preprocess (files with .pkl extension).
-- **`figures/`**: Folder with the generated figures from the preprocess and anomaly detection phases.
-- **`anom_det.py`**: The python file with the anomaly detection system.
-- **`preprocess.py`**: The python file with the preprocessing phase.
+- **`appweb/`**: This folder contains the project of the web app.
+  - **`myapp/`**: This is the folder of the project of the web app. It contains all the files of the app web.
+    - **`public/`**: This folder contains static files such as `index.html`, `manifest.json`, `robots.txt`, images, and icons used in the application.
+    - **`server/`**: This folder contains the backend (server-side) logic, including the entry point (`index.js`) and configuration files.
+    - **`src/`**: This folder containes the frontend (client-side) logic, including all the React components and styles.
+- **`dataset-fitness/`**: This folder contains the source datasets for the anomaly detection. There are 2 folders with all the files collected by Fitbit.
+- **`datasets/`**: This folder contains the generated datasets after the preprocess phase (files with .pkl extension).
+- **`figures/`**: This folder contains the generated figures from the preprocess and anomaly detection phases.
+- **`anom_det.py`**: This file corresponds to the anomaly detection system.
+- **`preprocess.py`**: This file corresponds to the preprocessing phase of the system.
 
 ## Installation
 
-To install the necessary dependencies, run the following command:
+The steps required to install and set up the tools for the web application are described below:
 
-```bash
-pip install -r requirements.txt
-```
+### Frontend Setup:
+
+- Install Node Version Manager (nvm) using the `nvm-setup.zip` file and then install Node.js version 18.7.0:
+  ```bash
+  nvm install 18.7.0
+  ```
+- Install Yarn version 1.22.17:
+  ```bash
+  yarn install
+  ```
+- Install the `create-react-app` module globally:
+  ```bash
+  yarn global add create-react-app
+  ```
+- Create the React application:
+  ```bash
+  yarn create react-app myapp
+  ```
+- To connect the frontend with the backend, add the proxy option in the `package.json` file:
+  ```bash
+  ”proxy”: ”http://localhost:3003”
+  ```
+- Navigate to the app folder and start the web application:
+  ```bash
+  cd myapp
+  yarn start
+  ```
+  By default, the frontend runs on port 3000.
+
+### Backend Setup:
+
+- Inside the app folder (`myapp`), create the server directory:
+  ```bash
+  mkdir server
+  ```
+- Navigate to the `server` folder and initialize the project with default settings:
+  ```bash
+  cd server
+  yarn init -y
+  ```
+- Install Express and subsequently any additional dependencies required for the backend:
+  ```bash
+  yarn add express
+  ```
+- Create the `index.js` file with the backend code (specify the server listening port as 3003).
+  
+- Start running the server:
+  ```bash
+  yarn start
+  ```
 
 ## Usage
 To run the project, execute the main script as follows:
