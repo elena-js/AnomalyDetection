@@ -16,19 +16,25 @@ This project is designed to detect anomalies on smartwatch health data and deplo
 ├── README.md
 ├── appweb/
 │   ├── myapp/
-│       └── public/
-│       └── server/
-│       └── src/
+│       ├── public/
+│           └── ...
+│       ├── server/
+│           └── ...
+│       ├── src/
+│           └── ...
+│       └── README.md
+│       └── package.json
+│       └── yarn.lock
 ├── dataset-fitness/
-│   ├── FitabaseData3.12.16-4.11.16-new/
-│       └── ...
-│   ├── FitabaseData4.12.16-5.12.16/
-│       └── ...  
+│   └── FitabaseData3.12.16-4.11.16-new.zip
+│   └── FitabaseData4.12.16-5.12.16.zip
 ├── datasets/
 │   └── data_user2022484408.pkl
 │   └── ...
 ├── figures/
 │   ├── user2022484408/
+│       └── ...
+│   ├── ...
 │       └── ...
 └── anom_det.py
 └── preprocess.py
