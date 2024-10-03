@@ -48,6 +48,9 @@ This project is designed to detect anomalies on smartwatch health data and deplo
     - **`public/`**: This folder contains static files such as `index.html`, `manifest.json`, `robots.txt`, images, and icons used in the application.
     - **`server/`**: This folder contains the backend (server-side) logic, including the entry point (`index.js`) and configuration files.
     - **`src/`**: This folder contains the frontend (client-side) logic, including all the React components and styles.
+    - **`README.md`**: This file contains general information, installation instructions, and project usage.
+    - **`package.json`**: This file defines project dependencies, scripts, and metadata for the frontend.
+    - **`yarn.lock`**: This file ensures exact dependency versions for a consistent environment.
 - **`dataset-fitness/`**: This folder contains the source datasets for the anomaly detection. There are 2 folders with all the files collected by Fitbit.
 - **`datasets/`**: This folder contains the generated datasets after the preprocess phase (files with `.pkl` extension).
 - **`figures/`**: This folder contains the generated figures from the preprocess and anomaly detection phases.
