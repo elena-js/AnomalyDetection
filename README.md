@@ -46,6 +46,8 @@ This project is designed to detect anomalies on smartwatch health data and deplo
 - **`anom_det.py`**: This file corresponds to the anomaly detection system.
 - **`preprocess.py`**: This file corresponds to the preprocessing phase of the system.
 
+*Note: The node_modules folder is not included.
+
 ## Installation
 
 The steps required to install and set up the tools for the web application are described below:
