@@ -1,0 +1,88 @@
+.user-input-container {
+    background-color: #c0edf9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 3px 8px #105467;
+    text-align: center;
+    height: auto; 
+    min-height: 145px;
+    opacity: 0.95;
+}
+
+/* Container for the input and button */
+.input-wrapper {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+/* Style for the input field */
+.user-input {
+    padding: 12px 20px; 
+    color: #105467;
+    border: 2px solid #9ed8e8;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 250px; 
+    box-sizing: border-box; 
+    height: 40px; 
+    margin: 0;
+}
+
+.user-input:focus {
+    border-color: #19758e;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+/* Style for user message */
+.user-message {
+    color: #105467;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 5px; 
+    margin-bottom: 0; 
+    margin-left: 30px;
+    font-style: italic;
+}
+
+.selected-user-container {
+    color: #105467;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #c0edf9;
+    opacity: 0.95;
+    width: 250px;
+    height: 35px;
+    border-radius: 30px;
+    box-shadow: 0 3px 8px #105467;
+    margin-left: 30px;
+}
+
+.intro-container {
+    color: #105467;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #c0edf9;
+    opacity: 0.95;
+    width: 410px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #105467;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 15px;
+}

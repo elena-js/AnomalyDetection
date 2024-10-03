@@ -1,0 +1,249 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App-header {
+  background-color: #13a2b8;
+  padding: 20px; 
+  color: white;
+  text-align: center;
+  border-bottom: 3px solid #105467;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Navigation styles */
+.nav-tabs {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #19758e;
+  border-radius: 10px;
+}
+
+.nav-tabs li {
+  margin: 0;
+  display: flex;
+}
+
+/* Hover effect only when not active */
+.nav-tabs li:hover .tab-link:not(.active) {
+  background-color: #105467;
+  border-radius: 5px;
+}
+
+.nav-tabs .tab-link {
+  display: block;
+  padding: 5px 10px;
+  height: 30px;
+  width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  text-decoration: none;
+  color: white;
+  background-color: #19758e;
+  border: 1px solid transparent;
+  border-bottom: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.nav-tabs .tab-link.active {
+  background-color: #c0edf9;
+  color: #105467;
+  border: 0px;
+  border-bottom: 3px solid #105467;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.tab-names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Additional styles to the content */
+main {
+  background-color: #f1f1f1;
+  padding: 20px;
+  min-height: 80vh;
+}
+
+h1 {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #105467;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Style for the typical button */
+.button {
+  background-color: #19758e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  height: 40px; 
+  width: 80px;
+  margin: 0; 
+}
+
+.button:hover {
+  background-color: #219abb;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:active {
+  background-color: #105467;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:disabled {
+  background-color: #0e3d4a;
+  cursor: not-allowed;
+}
+
+/* The mini rectangular box */
+.user-box {
+  position: absolute; 
+  top: 20px;
+  right: 22px; 
+  background-color: #f9f9f9; 
+  color: #19758e;
+  padding: 0px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 35px;
+  opacity: 0.95;
+}
+
+/* Style for the spinner */
+.spinner {
+  border: 10px solid #219abb61; 
+  border-top: 10px solid #219abb; 
+  border-radius: 50%;
+  width: 60px; 
+  height: 60px;
+  position: absolute; 
+  top: 64%; 
+  left: 47%; 
+  transform: translate(-50%, -50%); 
+  animation: spin 1s linear infinite; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%, transparent 40%);
+}
+
+.spinner-container {
+  align-items: center;
+  margin: 0 auto;
+  height: 120px;
+  width: 200px;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Load Data button*/
+.load-button {
+  background-color: #219abb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  height: 40px; 
+  width: 120px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.load-button:hover {
+  background-color: #5abdd8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.load-button:active {
+  background-color: #105467;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.load-button:disabled {
+  background-color: #19758e;
+  cursor: not-allowed;
+}
+
+/* Style for loading message */
+.loading-message {
+  color: #105467;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Style for background */
+.background-image {
+  background-image: url('/public/wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.load-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #c0edf9;
+  opacity: 0.95;
+  padding: 25px;
+  border-radius: 10px;
+  width: 480px;
+  box-shadow: 0 3px 8px #105467;
+}

@@ -1,0 +1,51 @@
+.initial-page {
+    text-align: center;
+    padding: 20px;
+  }
+
+/* Table styles */
+.days-table {
+  width: auto; 
+  margin: 0px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden; /* Apply border-radius to the whole table */
+  background-color: white;
+}
+
+/* Styling for all table cells */
+.days-table td {
+  padding: 8px 10px;
+  text-align: center;
+  border-bottom: 5px solid #9fe0f2; 
+}
+
+.days-table .first-column {
+  background-color: #13a2b8; 
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 180px; 
+  border-right: 1.5px solid #9fe0f2;
+}
+
+/* Styling for the rest table cells */
+.days-table td {
+  background-color: #19758e; 
+  color: white;
+  font-weight: bold;
+}
+
+/* Rounded corners for the first and last cells */
+.days-table tr:first-child td:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.days-table tr:first-child td:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
