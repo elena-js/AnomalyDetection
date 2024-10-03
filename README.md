@@ -11,7 +11,8 @@ This project is designed to detect anomalies on smartwatch health data and deplo
 
 ## Project Structure
 
-/my-project
+```markdown
+/anomalydetection
 ├── README.md
 ├── appweb/
 │   ├── myapp/
@@ -31,6 +32,7 @@ This project is designed to detect anomalies on smartwatch health data and deplo
 │       └── ...
 └── anom_det.py
 └── preprocess.py
+```
 
 ## File Descriptions
 
